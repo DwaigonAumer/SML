@@ -5,3 +5,12 @@ spring:
     password: guest
   zipkin:
     base-url: http://zipkin:9411/
+    
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: "*"
