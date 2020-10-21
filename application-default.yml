@@ -1,4 +1,11 @@
 endpoints:
+  enabled: true
+  jolokia:
+    enabled: true
+    sensative: false
+  actuator:
+    enabled: true
+    sensative: false
   health:
     sensative: false
 
@@ -11,6 +18,8 @@ spring:
     base-url: http://zipkin:9411/
     
 management:
+  security:
+    enabled: false
   endpoint:
     health:
       show-details: ALWAYS
