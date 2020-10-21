@@ -1,8 +1,3 @@
-eureka:
-  instance:
-    metadata-map:
-      version: '@project.version@'
-      
 endpoints:
   health:
     sensative: false
