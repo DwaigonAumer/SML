@@ -6,7 +6,7 @@ spring:
   redis:
     namespace: spring:session
     flush-mode: on_save
-    host: redis-cluster
+    host: redis-cluster.savingmusiclive
   session:
     storage-type: redis
   rabbitmq:
