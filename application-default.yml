@@ -6,7 +6,7 @@ spring:
   redis:
     namespace: spring:session
     flush-mode: on_save
-    host: "redis-cluster:6379"
+    host: redis-cluster
   session:
     storage-type: redis
   rabbitmq:
