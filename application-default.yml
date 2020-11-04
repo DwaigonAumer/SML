@@ -7,6 +7,9 @@ spring:
     namespace: spring:session
     flush-mode: on_save
     host: redis-cluster
+    cluster:
+      nodes: 6
+      max-redirects: 2
   session:
     storage-type: redis
   rabbitmq:
