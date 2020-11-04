@@ -3,12 +3,12 @@ endpoints:
     sensative: false
 
 spring:
+  redis:
+    namespace: spring:session
+    flush-mode: on_save
+    host: redis-cluster
   session:
     storage-type: redis
-    redis:
-      namespace: spring:session
-      flush-mode: on_save
-      host: redis-cluster
   rabbitmq:
     host: rabbitmq
     username: guest
